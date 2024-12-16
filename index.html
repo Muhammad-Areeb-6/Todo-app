@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do app</title>
+</head>
+<body>
+    <div class="contanier">
+        <h1>My To-do app</h1>
+        <div class="wrapper">
+
+            <form action="">
+                <div class="taskName">
+                    <label for="task">Enter the task you want to do:</label>
+                    <input type="text" name="task" id="task" required>
+                </div>
+                <div class="date">
+                    <label for="date">Enter the date to set the task:</label>    
+                    <input type="date" name="date" id="date" required>
+                </div>
+            </form>
+            <button type="submit">Add task</button>
+    </div>
+    </div>
+
+    <div class="previewList">
+        <h3>Task List</h3>
+        <header>
+            <span>check</span>
+            <span>Task</span>
+            <span>Date</span>
+            <span>Action</span>
+        </header>
+        <!-- Data to save in local storage -->
+        <div class="data">
+            <span><input type="checkbox"></span>
+            <span>Task 1</span>
+            <span>12/12/2020</span>
+            <span><button>Delete</button></span>
+        </div>
+    </div>
+</body>
+</html>
