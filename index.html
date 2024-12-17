@@ -14,14 +14,14 @@
             <form action="">
                 <div class="taskName">
                     <label for="task">Enter the task you want to do:</label>
-                    <input type="text" name="task" id="task" required>
+                    <input type="text" id="taskText" name="task" id="task" required>
                 </div>
                 <div class="date">
                     <label for="date">Enter the date to set the task:</label>    
-                    <input type="date" name="date" id="date" required>
+                    <input type="date" id="taskDate" name="date" id="date" required>
                 </div>
             </form>
-            <button type="submit">Add task</button>
+            <button type="submit" onclick="getTask()">Add task</button>
     </div>
     </div>
 
@@ -34,12 +34,8 @@
             <span>Action</span>
         </header>
         <!-- Data to save in local storage -->
-        <div class="data">
-            <span><input type="checkbox"></span>
-            <span>Task 1</span>
-            <span>12/12/2020</span>
-            <span><button>Delete</button></span>
-        </div>
+        <div class="data" id="TaskPreviw"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
