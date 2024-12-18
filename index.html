@@ -11,7 +11,7 @@
         <h1>My To-do app</h1>
         <div class="wrapper">
 
-            <form name="taskData">
+            <form name="taskData" id="taskForm" onsubmit="getTask(); return false;">
                 <div class="taskName">
                     <label for="task">Enter the task you want to do:</label>
                     <input type="text" id="taskText" name="task" id="task" required>
@@ -21,20 +21,17 @@
                     <input type="date" id="taskDate" name="date" id="date" required>
                 </div>
             </form>
-            <button type="submit" onclick="getTask()">Add task</button>
+            <button type="submit" id="submit" onclick="getTask()">Add task</button>
     </div>
     </div>
-
-    <div class="previewList">
-        <h3>Task List</h3>
-        <header>
-            <span>check</span>
-            <span>Task</span>
-            <span>Date</span>
-            <span>Action</span>
-        </header>
-        <!-- Data to save in local storage -->
-        <div class="data" id="TaskPreviw"></div>
+    <div class="contanier">
+        <h2>Task list</h2>
+        <!-- <button id="deleteAllTasks" onclick="deleteAllTasks()">Delete All</button> -->
+        <div class="wrapper2">
+            <table id="taskTable">
+                
+            </table>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
